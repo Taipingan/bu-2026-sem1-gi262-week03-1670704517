@@ -1,9 +1,13 @@
 using UnityEngine;
 
-namespace Assignment.StudentSolution
+namespace Assignment03.StudentSolution
 {
-    public class Equipment
+    public class Equipment : Item
     {
-
+        public virtual void Equip(Player player)
+        {
+            if (player == null)
+                return;
+        }
     }
 }

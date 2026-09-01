@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assignment.StudentSolution
+namespace Assignment03.StudentSolution
 {
     public class Entity
     {
@@ -14,10 +14,15 @@ namespace Assignment.StudentSolution
 
         protected virtual void TakeDamage(int damage)
         {
+            health -= damage;
+
+            if (health < 0)
+                health = 0;
         }
 
         private void Move(Vector3 direction)
         {
+            position += direction;
         }
     }
 }

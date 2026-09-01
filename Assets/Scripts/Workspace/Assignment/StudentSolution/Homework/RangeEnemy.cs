@@ -1,9 +1,15 @@
 using UnityEngine;
 
-namespace Assignment.StudentSolution
+namespace Assignment03.StudentSolution
 {
-    public class RangeEnemy
+    public class RangeEnemy : Enemy
     {
+        public int range;
 
+        public override void Attack(Entity target)
+        {
+            if (target == null)
+                return;
+        }
     }
 }
